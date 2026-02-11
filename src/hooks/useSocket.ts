@@ -10,7 +10,7 @@ import {
   AudioChunk,
 } from '@/types';
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:8000';
+const BACKEND_URL = process.env.NEXT_PUBLIC_SOCKET_URL || 'http://localhost:8000';
 
 export function useSocket() {
   const socketRef = useRef<Socket | null>(null);
